@@ -36,4 +36,10 @@ public partial class Book
     public virtual ICollection<SCard> SCards { get; set; } = new List<SCard>();
 
     public virtual ICollection<TCard> TCards { get; set; } = new List<TCard>();
+
+
+    public override string ToString()
+    {
+        return $"{Id} {Name}";
+    }
 }

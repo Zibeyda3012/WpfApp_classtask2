@@ -19,11 +19,11 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <ComboBox Name="cmb1"  Grid.Column="0" Width="200" Height="60" SelectionChanged="cmb1_SelectionChanged"/>
-            <ComboBox Name="cmb2" Grid.Column="1" Width="200" Height="60" Margin="5"/>
+            <ComboBox Name="cmb1"  Grid.Column="0" Width="200" Height="40" SelectionChanged="cmb1_SelectionChanged"/>
+            <ComboBox Name="cmb2" Grid.Column="1" Width="200" Height="40" Margin="5" SelectionChanged="cmb2_SelectionChanged" />
         </Grid>
 
-        <DataGrid Grid.Row="1"/>
+        <ListBox Grid.Row="1" ItemsSource="{Binding Books}"/>
 
     </Grid>
 </Window>
